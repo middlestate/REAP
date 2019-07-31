@@ -1,0 +1,9 @@
+{
+  "name": "REAP",
+  "version": "1.0.0",
+  "description": "REAP website",
+  "main": "index.js",
+  "repository": "git@github.com:middlestate/REAP.git",
+  "author": "Paul Hosler <pahosler@gmail.com>",
+  "license": "MIT"
+}
