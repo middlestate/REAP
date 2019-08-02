@@ -5,5 +5,21 @@
   "main": "index.js",
   "repository": "git@github.com:middlestate/REAP.git",
   "author": "Paul Hosler <pahosler@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-config-standard-react": "^8.0.0",
+    "eslint-config-standard-trailing-commas": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.0",
+    "netlify-cli": "^2.12.0",
+    "prettier": "^1.18.2",
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-recommended": "^3.0.3"
+  }
 }

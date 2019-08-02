@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow
+media_floder: static/img
+public_folder: /img
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - file: "src/pages/index.md"
+        label: "Home Page"
+        name: home
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: hidden, default: "home-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Mission, name: mission, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: "What We Do", name: what_we_do, widget: object, fields: [{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image},{label: Text, name: text, widget: text}]}]}
+          - {label: Quote, name: quote, widget: object, fields:[{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
+          - {label: "For Students", name: for_students, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Cards, name: cards, widget: list, fields: [{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}]}
+      - file: "src/pages/about/index.md"
+        label: "About Page"
+        name: about
+        fields:
+          - {label: "Template Key", name: templateKey, widget: hidden, default: "about-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "What We Do", name: what_we_do, widget: object, fields:[{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
+          - {label: "For Students", name: for_students, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Cards, name: cards, widget: list, fields: [{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}]}
