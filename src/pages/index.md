@@ -11,7 +11,7 @@ mission:
     rural communities. We focus on activities that directly improve the quality of education and raise the academic 
     bar for rural students in agricultural communities, and support students who have demonstrated the ability and 
     drive to become leaders in their communities.
-what-we-do:
+what_we_do:
   action:
     - image: /img/grad-cap.svg
       text: >
@@ -29,7 +29,7 @@ quote:
   text: >
     “REAP has helped me strive for higher grades that I probably wouldn’t have tried for before.”
   cite: Oscar Sevilla, ’14 graduate of Lindsay High School
-for-students:
+for_students:
   heading: How REAP Works For Students
   cards:
     - title: Scholarships and Mentorship

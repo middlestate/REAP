@@ -4,7 +4,7 @@ title: About REAP
 subtitle: Giving back to the ag communities who have given us so much 
 heading:
 subheading:
-what-we-do:
+what_we_do:
   action:
     - image: /img/grad-cap.svg
       text: >
@@ -22,7 +22,7 @@ quote:
   text: >
     “REAP has helped me strive for higher grades that I probably wouldn’t have tried for before.”
   cite: Oscar Sevilla, ’14 graduate of Lindsay High School
-for-students:
+for_students:
   heading: How REAP Works For Students
   cards:
     - title: Scholarships and Mentorship
