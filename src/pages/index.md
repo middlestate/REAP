@@ -7,7 +7,7 @@ subheading:
 mission:
   image:
   text: >
-    REAP — Rural Education for Americans Projcet — is a non-profit foundation established to support education in 
+    REAP — Rural Education for Americans Project — is a non-profit foundation established to support education in 
     rural communities. We focus on activities that directly improve the quality of education and raise the academic 
     bar for rural students in agricultural communities, and support students who have demonstrated the ability and 
     drive to become leaders in their communities.
@@ -32,10 +32,11 @@ quote:
 for_students:
   heading: How REAP Works For Students
   cards:
-    - title: Scholarships and Mentorship
-      text: Incentive-based scholarships that promote elevated standards supported by peer mentorship
-    - title: Counseling and Education
-      text: REAP-funded counselor providing additional support for students along the  college track
-    - title: Workshops and Contacts
-      text: Regular topic-based workshops designed to prepare students for rigors of college application process
+    content:
+       - title: Scholarships and Mentorship
+          text: Incentive-based scholarships that promote elevated standards supported by peer mentorship
+        - title: Counseling and Education
+          text: REAP-funded counselor providing additional support for students along the  college track
+        - title: Workshops and Contacts
+          text: Regular topic-based workshops designed to prepare students for rigors of college application process
 ---

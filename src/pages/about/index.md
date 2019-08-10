@@ -1,34 +1,35 @@
 ---
 templateKey: about-page
 title: About REAP
-subtitle: Giving back to the ag communities who have given us so much 
+subtitle: Giving back to the ag communities who have given us so much
 heading:
 subheading:
-what_we_do:
-  action:
-    - image: /img/grad-cap.svg
-      text: >
-        Create and inspire college dreams in communities with few graduate role models through mentorship
-    - image: /img/roadmap.svg
-      text: >
-        Familiarize students and their families with the various pathways to college and be a resource of information
-    - image: /img/scholarships.svg
-      text: >
-        In addition to providing REAP scholarships we helps students identify and apply for additional college funding
-    - image: /img/excellence.svg
-      text: >
-        Mentors push students to set high standards, and encourage them to develop and practice leadership skills
+our_youth:
+  video: /img/some.mp4
+  heading: Raising the bar for our youth
+  text: >
+    REAP — Rural Education for Americans Projcet — is a non-profit foundation established to support education in rural communities. We focus on activities that directly improve the quality of education and raise the academic bar for rural students in agricultural communities, and support students who have demonstrated the ability and drive to become leaders in their communities.
+our_communities:
+  image: https://bulma.io/images/placeholders/640x480.png
+  heading: Our Communities
+  text: >
+    Currently, our programs provide assistance to students with first-generation college graduate aspirations in Lindsay and Orosi school districts.  REAP programs help individual students set and achieve high goals and gain hope in their futures creating a college-going culture throughout the rural community.
 quote:
   text: >
-    “REAP has helped me strive for higher grades that I probably wouldn’t have tried for before.”
-  cite: Oscar Sevilla, ’14 graduate of Lindsay High School
-for_students:
-  heading: How REAP Works For Students
-  cards:
-    - title: Scholarships and Mentorship
-      text: Incentive-based scholarships that promote elevated standards supported by peer mentorship
-    - title: Counseling and Education
-      text: REAP-funded counselor providing additional support for students along the <U+2028>college track
-    - title: Workshops and Contacts
-      text: Regular topic-based workshops designed to prepare students for rigors of college application process
+    “The REAP Program has motivated me to start looking into my career and school options. It has showed me that there is help, and I can do it.”
+  cite: — Erica Hernandez, ’13 graduate of Lindsay High School
+by_numbers:
+  action:
+    - image: /img/envelope-icon.svg
+      number: 103
+      text: Scholarships Awarded
+    - image: /img/scholarship_money-icon.svg
+      number: $875,000
+      text: Scholarship Dollars Awarded
+    - image: /img/student-desk-icon.svg
+      number: 75
+      text: Current students in program
+    - image: /img/grad-icon.svg
+      number: 75
+      text: Program alumni who have completed college
 ---
