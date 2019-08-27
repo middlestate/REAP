@@ -6,6 +6,15 @@
   "repository": "git@github.com:middlestate/REAP.git",
   "author": "Paul Hosler <pahosler@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "lint": "eslint --ext js,jsx --ignore-path .gitignore .",
+    "lint:fix": " eslint --ext js,jsx --ignore-path .gitignore . --fix",
+    "clean": "rm -rf public/ .cache/"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
