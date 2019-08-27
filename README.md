@@ -6,8 +6,8 @@ REAP web site
 
 ### Framework stuff
 
-- [ ] gatsby-config.js
-- [ ] gatsby-node.js
+- [x] gatsby-config.js
+- [x] gatsby-node.js
 
 ### Components
 
