@@ -2,8 +2,8 @@
 templateKey: about-page
 title: About REAP
 subtitle: Giving back to the ag communities who have given us so much
-heading:
-subheading:
+heading: heading
+subheading: subheading
 our_youth:
   video: /img/some.mp4
   heading: Raising the bar for our youth
@@ -21,15 +21,15 @@ quote:
 by_numbers:
   action:
     - image: /img/envelope-icon.svg
-      number: 103
+      num: '103'
       text: Scholarships Awarded
     - image: /img/scholarship_money-icon.svg
-      number: $875,000
+      num: '$875,000'
       text: Scholarship Dollars Awarded
     - image: /img/student-desk-icon.svg
-      number: 75
+      num: '75'
       text: Current students in program
     - image: /img/grad-icon.svg
-      number: 75
+      num: '75'
       text: Program alumni who have completed college
 ---

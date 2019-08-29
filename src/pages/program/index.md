@@ -2,17 +2,17 @@
 templateKey: program-page
 title: Program
 subtitle: Incentive-based scholarships based on performance
-heading:
-subheading:
+heading: heading
+subheading: subheading
 culture:
-  video: /img/https://bulma.io/images/placeholders/640x480.png
+  video: https://bulma.io/images/placeholders/640x480.png
   heading: Culture of success
   text: >
-    REAP students are provided with additional counseling teaching students 
-    how they can grow their REAP college funds, and receive support and 
-    encouragement throughout their academic careers. Students can track their 
-    REAP rewards through the earnings report received each semester, which 
-    provides an opportunity for the student to draw a concrete connection 
+    REAP students are provided with additional counseling teaching students
+    how they can grow their REAP college funds, and receive support and
+    encouragement throughout their academic careers. Students can track their
+    REAP rewards through the earnings report received each semester, which
+    provides an opportunity for the student to draw a concrete connection
     between academic performance and financial reward
 glance:
   heading: REAP AT A Glance
