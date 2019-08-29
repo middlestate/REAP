@@ -2,14 +2,14 @@
 templateKey: home-page
 title: REAP
 subtitle: Cultivating the next generation of college minds in rural California
-heading:
-subheading:
+heading: heading
+subheading: subheading
 mission:
-  image:
+  image: https://bulma.io/images/placeholders/640x480.png
   text: >
-    REAP — Rural Education for Americans Project — is a non-profit foundation established to support education in 
-    rural communities. We focus on activities that directly improve the quality of education and raise the academic 
-    bar for rural students in agricultural communities, and support students who have demonstrated the ability and 
+    REAP — Rural Education for Americans Project — is a non-profit foundation established to support education in
+    rural communities. We focus on activities that directly improve the quality of education and raise the academic
+    bar for rural students in agricultural communities, and support students who have demonstrated the ability and
     drive to become leaders in their communities.
 what_we_do:
   action:
@@ -33,10 +33,10 @@ for_students:
   heading: How REAP Works For Students
   cards:
     content:
-       - title: Scholarships and Mentorship
-          text: Incentive-based scholarships that promote elevated standards supported by peer mentorship
-        - title: Counseling and Education
-          text: REAP-funded counselor providing additional support for students along the  college track
-        - title: Workshops and Contacts
-          text: Regular topic-based workshops designed to prepare students for rigors of college application process
+      - title: Scholarships and Mentorship
+        text: Incentive-based scholarships that promote elevated standards supported by peer mentorship
+      - title: Counseling and Education
+        text: REAP-funded counselor providing additional support for students along the college track
+      - title: Workshops and Contacts
+        text: Regular topic-based workshops designed to prepare students for rigors of college application process
 ---
