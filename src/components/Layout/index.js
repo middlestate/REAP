@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
-import config from '../../../static/config'
+import config from '../../../config'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
 
