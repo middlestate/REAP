@@ -1,7 +1,7 @@
 import React from 'react'
 // import config from '../../../config'
 import { Link } from 'gatsby'
-import Logo from '../../assets/img/tastemakers-primary-01.svg'
+import Logo from '../../assets/img/reap_white.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {

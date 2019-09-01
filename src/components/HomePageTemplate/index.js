@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-const HomePage = ({ title, heading, subheading, mission, what_we_do, quote, for_students }) => (
+const HomePageTemplate = ({ title, subtitle, heading, subheading, mission, what_we_do, quote, for_students }) => (
   <Fragment>
     {/* Hero Section */}
     <div className='section hero'>
@@ -14,8 +14,9 @@ const HomePage = ({ title, heading, subheading, mission, what_we_do, quote, for_
   </Fragment>
 )
 
-HomePage.propTypes = {
+HomePageTemplate.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mission: PropTypes.shape({
@@ -31,8 +32,10 @@ HomePage.propTypes = {
   }),
   for_students: PropTypes.shape({
     heading: PropTypes.string,
-    cards: PropTypes.array,
+    cards: PropTypes.shape({
+      content: PropTypes.array,
+    }),
   }),
 }
 
-export default HomePage
+export default HomePageTemplate
