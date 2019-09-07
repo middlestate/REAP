@@ -18,8 +18,9 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: Mission, name: mission, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
-          - {label: "What We Do", name: what_we_do, widget: object, fields: [{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image},{label: Text, name: text, widget: text}]}]}
+          - {label: 'Hero Image', name: hero_image, widget: image}
+          - {label: Mission, name: mission, widget: object, fields: [{label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: "What We Do", name: what_we_do, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string},{label: Text, name: text, widget: text}]}]}
           - {label: Quote, name: quote, widget: object, fields:[{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
           - {label: "For Students", name: for_students, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Cards, name: cards, widget: list, fields: [{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}]}
       - file: "src/pages/about/index.md"
