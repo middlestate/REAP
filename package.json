@@ -39,6 +39,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "bulma": "^0.7.5",
+    "bulma-carousel": "^4.0.4",
     "gatsby": "^2.13.57",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-feed": "^2.3.6",
