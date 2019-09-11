@@ -47,9 +47,9 @@ export const pageQuery = graphql`
         }
         glance {
           heading
-          blurbs {
+          action {
             image
-            title
+            heading
             text
           }
         }

@@ -1,5 +1,9 @@
 import React, { Fragment } from 'react'
 import { PropTypes } from 'prop-types'
+import Mission from '../Mission'
+import Quote from '../Quote'
+import WhatWeDo from '../WhatWeDo'
+import Carousel from '../Carousel'
 
 const ProgramPage = ({ title, subtitle, heading, subheading, culture, glance, quote, pathway }) => (
   <Fragment>
@@ -16,10 +20,22 @@ const ProgramPage = ({ title, subtitle, heading, subheading, culture, glance, qu
         </div>
       </div>
     </div>
-    <div className='section'>{/* Culture Section */}</div>
-    <div className='section'>{/* At A Glance Section */}</div>
-    <div className='section'>{/* Quote Section */}</div>
-    <div className='section'>{/* Pathway Section */}</div>
+    <div className='section is-gapless is-marginless has-text-REAP-gray'>
+      {/* Culture Section */}
+      <Mission image={culture.video} heading={culture.heading} text={culture.text} />
+    </div>
+    <div className='section'>
+      {/* At A Glance Section */}
+      <WhatWeDo heading={glance.heading} actions={glance.action} />
+    </div>
+    <div className='section is-gapless is-marginless is-REAP-gray'>
+      {/* Quote Section */}
+      <Quote text={quote.text} cite={quote.cite} />
+    </div>
+    <div className='section'>
+      {/* Pathway Section */}
+      <Carousel heading={pathway.heading} cards={pathway.carousel.cards} />
+    </div>
   </Fragment>
 )
 
@@ -35,7 +51,7 @@ ProgramPage.propTypes = {
   }),
   glance: PropTypes.shape({
     heading: PropTypes.string,
-    blurbs: PropTypes.array,
+    action: PropTypes.array,
   }),
   quote: PropTypes.shape({
     text: PropTypes.string,
@@ -43,7 +59,9 @@ ProgramPage.propTypes = {
   }),
   pathway: PropTypes.shape({
     heading: PropTypes.string,
-    carousel: PropTypes.object,
+    carousel: PropTypes.shape({
+      cards: PropTypes.array,
+    }),
   }),
 }
 
