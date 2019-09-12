@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import NavBar from '../NavBar'
 import Mission from '../Mission'
 import WhatWeDo from '../WhatWeDo'
 import Quote from '../Quote'
@@ -7,15 +8,15 @@ import ForStudents from '../ForStudents'
 
 const HomePageTemplate = ({ title, subtitle, heading, subheading, hero_image, mission, what_we_do, quote, for_students }) => (
   <Fragment>
-    <div className='section hero is-fullheight-with-navbar' style={{ backgroundImage: `url(${hero_image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', backgroundSize: 'cover' }}>
+    <div className='section hero is-fullheight' style={{ backgroundImage: `url(${hero_image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', backgroundSize: 'cover' }}>
       {/* Hero Section */}
       {/* <div className='section hero is-fullheight-with-navbar is-paddingless is-marginless' style={{ position: 'relative', top: 0, left: 0, backgroundImage: `url(${hero_image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top left', backgroundSize: 'cover' }}>
       <div className='overlay' /> */}
 
       {/* <div className='hero-head'> */}
       <div className='section hero-head is-paddingless is-marginless' style={{ backgroundImage: `url(${hero_image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }}>
+        <NavBar />
         <div className='overlay' />
-
         {/* <img src={hero_image} style={{ position: 'absolute', top: 0, left: 0 }} /> */}
         {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#7a7a7a', opacity: 0.80 }} /> */}
       </div>

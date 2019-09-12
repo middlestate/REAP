@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import config from '../../../config'
-import NavBar from '../NavBar'
+// import NavBar from '../NavBar'
 import Footer from '../Footer'
 import '../../assets/sass/styles.sass'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -29,7 +29,7 @@ class Layout extends Component {
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
         </Helmet>
-        <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />
+        {/* <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} /> */}
         <Fragment>{this.props.children}</Fragment>
         <Footer />
       </Fragment>

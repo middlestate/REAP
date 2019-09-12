@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js'
 import PropTypes from 'prop-types'
 
-const carousels = bulmaCarousel.attach('.carousel', {
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  loop: true,
-})
+// const carousels = bulmaCarousel.attach('.carousel', {
+//   slidesToScroll: 1,
+//   slidesToShow: 1,
+//   loop: true,
+// })
 
 class Carousel extends Component {
   constructor (props) {
@@ -22,10 +22,11 @@ class Carousel extends Component {
   }
 
   componentDidMount () {
-    const element = document.querySelector('#carousel')
-    if (element && element.bulmaCarousel) {
-      element.bulmaCarousel.start()
-    }
+    const carousels = bulmaCarousel.attach('.carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+    })
   }
 
   render () {
@@ -35,16 +36,24 @@ class Carousel extends Component {
         <div className='column is-half has-text-centered'>
           <h1 className='is-size-1 has-text-REAP-gray'>{heading}</h1>
         </div>
-        <div className='column is-three-quarters is-offset-5' style={{ overflow: 'hidden' }}>
-          <div className='carousel' id='carousel' >
+        <div
+          className='column is-three-quarters is-offset-5'
+          style={{ overflow: 'hidden' }}>
+          <div className='carousel' id='carousel'>
             {cards.map(({ title, text }, keys) => (
               <div key={keys} className={`item-${keys + 1}`}>
                 <div className='card' style={{ width: '50%' }}>
                   <header className='card-header'>
-                    <p className='card-header-title has-text-REAP-orange is-size-3' style={{ flex: 1, justifyContent: 'center' }}>{title}</p>
+                    <p
+                      className='card-header-title has-text-REAP-orange is-size-3'
+                      style={{ flex: 1, justifyContent: 'center' }}>
+                      {title}
+                    </p>
                   </header>
                   <div className='card-content' style={{ margin: 20 }}>
-                    <div className='content'><span style={{ padding: 20, margin: 20 }}>{text}</span></div>
+                    <div className='content'>
+                      <span style={{ padding: 20, margin: 20 }}>{text}</span>
+                    </div>
                   </div>
                 </div>
               </div>
