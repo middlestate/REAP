@@ -15,16 +15,18 @@ const ForStudents = ({
       <div className='columns is-centered is-mobile'>
         <div className='column is-10 is-offset-1'>
           <div className='tile is-ancestor '>
-            <div className='tile is-parent'>
-              {cards.map(({ title, text }, keys) =>
-                <article key={keys} className='tile is-4 is-child has-text-centered box' >
-                  <p className='title '>{title}</p>
+
+            {cards.map(({ title, text }, keys) =>
+              <div className='tile is-parent'>
+                <article key={keys} className='tile is-11 is-child has-text-centered box' >
+                  <p className='title is-size-5-mobile is-size-5-tablet' style={{ wordWrap: 'normal' }}>{title}</p>
                   <div className='content'>
                     <p>{text}</p>
                   </div>
                 </article>
-              )}
-            </div>
+              </div>
+            )}
+            {/* </div> */}
           </div>
         </div>
       </div>

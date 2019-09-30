@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import NavBar from '../NavBar'
 import Mission from '../Mission'
 import Community from '../Communities'
 import Quote from '../Quote'
@@ -10,9 +9,7 @@ const AboutPage = ({ title, subtitle, heading, subheading, our_youth, our_commun
   <Fragment>
     {/* About Hero Section */}
     <div className='section hero is-medium is-REAP-orange'>
-      <div className='hero-head'>
-        <NavBar />
-      </div>
+      <div className='hero-head' />
       <div className='hero-body'>
         <div className='columns'>
           <div className='column is-4 is-offset-2'>
