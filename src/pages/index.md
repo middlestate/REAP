@@ -4,25 +4,32 @@ title: REAP
 subtitle: Cultivating the next generation of college minds in rural California
 heading: heading
 subheading: subheading
+hero_image: /img/classroom_hero.jpg
 mission:
-  image: https://bulma.io/images/placeholders/640x480.png
+  image: /img/students_studying.jpg
+  heading: Our Mission
   text: >
     REAP — Rural Education for Americans Project — is a non-profit foundation established to support education in
     rural communities. We focus on activities that directly improve the quality of education and raise the academic
     bar for rural students in agricultural communities, and support students who have demonstrated the ability and
     drive to become leaders in their communities.
 what_we_do:
+  heading: What We Strive To Do For Our Students
   action:
-    - image: /img/grad-cap.svg
+    - image: /img/grad_icon.svg
+      heading: College Culture
       text: >
         Create and inspire college dreams in communities with few graduate role models through mentorship
-    - image: /img/roadmap.svg
+    - image: /img/roadsign_icon.svg
+      heading: Roadmap
       text: >
         Familiarize students and their families with the various pathways to college and be a resource of information
-    - image: /img/scholarships.svg
+    - image: /img/scholarship_icon.svg
+      heading: Scholarships
       text: >
         In addition to providing REAP scholarships we helps students identify and apply for additional college funding
-    - image: /img/excellence.svg
+    - image: /img/star_icon.svg
+      heading: Excellence
       text: >
         Mentors push students to set high standards, and encourage them to develop and practice leadership skills
 quote:

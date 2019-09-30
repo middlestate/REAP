@@ -55,9 +55,10 @@ export const pageQuery = graphql`
           cite
         }
         by_numbers {
+          heading
           action {
             image
-            num
+            heading
             text
           }
         }

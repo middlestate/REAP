@@ -81,7 +81,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter EA Content Manager`,
+        htmlTitle: `REAP Content Manager`,
       },
     },
     {

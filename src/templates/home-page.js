@@ -13,6 +13,7 @@ const HomePage = ({ data }) => {
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        hero_image={frontmatter.hero_image}
         mission={frontmatter.mission}
         what_we_do={frontmatter.what_we_do}
         quote={frontmatter.quote}
@@ -40,13 +41,17 @@ export const pageQuery = graphql`
         subtitle
         heading
         subheading
+        hero_image
         mission {
           image
+          heading
           text
         }
         what_we_do {
+          heading
           action {
             image
+            heading
             text
           }
         }
