@@ -8,4 +8,4 @@ import ContactPagePreview from './previews/ContactPagePreview'
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('program', ProgramPagePreview)
-CMCMS.registerPreviewTemplate('contact', ContactPagePreview)
+CMS.registerPreviewTemplate('contact', ContactPagePreview)
