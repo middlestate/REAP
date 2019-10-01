@@ -7,15 +7,14 @@ const NavBar = ({ isActive, toggleNavbar }) => (
   <nav
     className='navbar is-fixed-top has-text-white is-REAP-orange'
     aria-label='main navigation'
-    style={{ height: 80 }}
   >
     <div
-      className='navbar-brand is-centered'
+      className='navbar-brand is-centered is-size-1'
       style={{ flex: 1, justifyContent: 'center' }}>
       <Link to='/' className='navbar-item'>
-        <figure className='image' >
-          <img src={Logo} />
-        </figure>
+        {/* <figure className='image' > */}
+        <img src={Logo} />
+        {/* </figure> */}
       </Link>
       <div
         className={`navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -47,8 +46,8 @@ const NavBar = ({ isActive, toggleNavbar }) => (
         </a> */}
         <a
           href='#donate'
-          className='button donate has-text-white'
-          style={{ marginTop: 22, marginRight: 10 }}>
+          className='button donate has-text-white is-vcentered'
+          style={{ marginTop: 18 }}>
           DONATE
         </a>
       </div>
