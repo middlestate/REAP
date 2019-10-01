@@ -42,7 +42,7 @@ collections:
         fields:
           - {label: "Template Key", name: templateKey, widget: hidden, default: "program-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name subtitle, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Culture, name: culture, widget: object, fields: [{label: Video, name: Video, widget: string},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
