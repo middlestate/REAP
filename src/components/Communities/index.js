@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Mission = ({
+const Community = ({
   image,
   heading,
   text,
@@ -10,20 +10,20 @@ const Mission = ({
     {/* 'container is-REAP-orange'> */}
     <div className='columns is-multiline center'>
       <div className='column'>
-        <img src={image} />
-      </div>
-      <div className='column'>
         <h2 className='is-size-3'>{heading}</h2>
         <p className='is-size-5'>{text}</p>
+      </div>
+      <div className='column'>
+        <img src={image} />
       </div>
     </div>
   </div>
 )
 
-Mission.propTypes = {
+Community.propTypes = {
   image: PropTypes.string,
   heading: PropTypes.string,
   text: PropTypes.string,
 }
 
-export default Mission
+export default Community

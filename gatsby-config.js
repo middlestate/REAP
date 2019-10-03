@@ -81,7 +81,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter EA Content Manager`,
+        htmlTitle: `REAP Content Manager`,
       },
     },
     {
@@ -166,7 +166,7 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         limit: 1000,
-                        sort: { order: DESC, fields: [frontmatter___slug] },
+                        sort: { order: DESC, fields: [frontmatter___templateKey] },
                       ) {
                         edges {
                           node {
@@ -192,13 +192,13 @@ module.exports = {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`, `slug`],
+        fields: [`title`, `templateKey`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
             title: node => node.frontmatter.title,
-            slug: node => node.fields.slug,
+            slug: node => node.fields.templateKey,
           },
         },
       },

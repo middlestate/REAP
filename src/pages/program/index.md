@@ -2,32 +2,32 @@
 templateKey: program-page
 title: Program
 subtitle: Incentive-based scholarships based on performance
-heading:
-subheading:
+heading: heading
+subheading: subheading
 culture:
-  video: /img/https://bulma.io/images/placeholders/640x480.png
+  video: https://bulma.io/images/placeholders/640x480.png
   heading: Culture of success
   text: >
-    REAP students are provided with additional counseling teaching students 
-    how they can grow their REAP college funds, and receive support and 
-    encouragement throughout their academic careers. Students can track their 
-    REAP rewards through the earnings report received each semester, which 
-    provides an opportunity for the student to draw a concrete connection 
+    REAP students are provided with additional counseling teaching students
+    how they can grow their REAP college funds, and receive support and
+    encouragement throughout their academic careers. Students can track their
+    REAP rewards through the earnings report received each semester, which
+    provides an opportunity for the student to draw a concrete connection
     between academic performance and financial reward
 glance:
   heading: REAP AT A Glance
-  blurbs:
-    - image: /img/chart_icon.svg
-      title: Performance
+  action:
+    - image: /img/chart-icon.svg
+      heading: Performance
       text: Incentive-Based Scholarships provide college funding to students based on their performance in the 7th through 12th grade
-    - image: /img/placeholder.svg
-      title: 4-Year Colleges
+    - image: /img/chart-icon.svg
+      heading: 4-Year Colleges
       text: REAP funds are only disbursed for four-year accredited universities.
-    - image: /img/placeholder.svg
-      title: $$$ Potential
+    - image: /img/chart-icon.svg
+      heading: $$$ Potential
       text: Students can earn up to $2,500 per year for college
-    - image: /img/placeholder.svg
-      title: Alumni Support
+    - image: /img/chart-icon.svg
+      heading: Alumni Support
       text: REAP alumni who are receiving funds are required to mentor current REAP high school students via email.
 quote:
   text: >

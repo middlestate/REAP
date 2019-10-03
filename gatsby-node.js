@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000, sort: { order: DESC, fields: [frontmatter___slug] }) {
+      allMarkdownRemark(limit: 1000, sort: { order: DESC, fields: [frontmatter___title] }) {
         edges {
           node {
             id
@@ -18,7 +18,6 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               title
               templateKey
-              slug
             }
           }
         }
@@ -26,7 +25,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
+      result.errors.forEach(e => console.error('>>>>>', e.toString()))
       return Promise.reject(result.errors)
     }
 

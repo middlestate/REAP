@@ -3,7 +3,7 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_floder: static/img
+media_folder: static/img
 public_folder: /img
 
 collections:
@@ -12,19 +12,20 @@ collections:
     files:
       - file: "src/pages/index.md"
         label: "Home Page"
-        name: home
+        name: 'home'
         fields:
           - {label: "Template Key", name: "templateKey", widget: hidden, default: "home-page"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: Mission, name: mission, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
-          - {label: "What We Do", name: what_we_do, widget: object, fields: [{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image},{label: Text, name: text, widget: text}]}]}
+          - {label: 'Hero Image', name: hero_image, widget: image}
+          - {label: Mission, name: mission, widget: object, fields: [{label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: "What We Do", name: what_we_do, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string},{label: Text, name: text, widget: text}]}]}
           - {label: Quote, name: quote, widget: object, fields:[{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
           - {label: "For Students", name: for_students, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Cards, name: cards, widget: list, fields: [{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}]}
       - file: "src/pages/about/index.md"
         label: "About Page"
-        name: about
+        name: 'about'
         fields:
           - {label: "Template Key", name: templateKey, widget: hidden, default: "about-page"}
           - {label: Title, name: title, widget: string}
@@ -34,18 +35,18 @@ collections:
           - {label: "Our Youth", name: our_youth, widget: object, fields: [{label: Video, name: video, widget: image},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
           - {label: "Our Communities", name: our_communities, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string},{label: Text, name: text, widget: text}]}
           - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
-          - {label: "By The Numbers", name: by_numbers, widget: object, fields:[{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Numbers, name: number, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: "By The Numbers", name: by_numbers, widget: object, fields:[{label: Action, name: action, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
       - file: "src/pages/program/index.md"
         label: "Program Page"
         name: program
         fields:
           - {label: "Template Key", name: templateKey, widget: hidden, default: "program-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name subtitle, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Culture, name: culture, widget: object, fields: [{label: Video, name: Video, widget: string},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: "At A Glance", name: glance, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: string}, {label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: "At A Glance", name: glance, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Blurbs, name: action, widget: list, fields: [{label: Image, name: image, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: text},{label: Citation, name: cite, widget: string}]}
           - {
               label: Pathway,

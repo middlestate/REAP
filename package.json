@@ -1,5 +1,5 @@
 {
-  "name": "REAP",
+  "name": "reap",
   "version": "1.0.0",
   "description": "REAP website",
   "main": "index.js",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-regular-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
@@ -66,6 +67,8 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
     "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }

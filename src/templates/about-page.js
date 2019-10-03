@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import AboutPage from '../components/AboutPageTemplate'
+import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
 
-const About = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
-      <AboutPage
+      <AboutPageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
@@ -22,7 +22,7 @@ const About = ({ data }) => {
   )
 }
 
-About.propTypes = {
+AboutPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -30,7 +30,7 @@ About.propTypes = {
   }),
 }
 
-export default About
+export default AboutPage
 
 export const pageQuery = graphql`
   query AboutPage($id: String!) {
@@ -55,9 +55,10 @@ export const pageQuery = graphql`
           cite
         }
         by_numbers {
+          heading
           action {
             image
-            number
+            heading
             text
           }
         }

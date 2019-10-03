@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ProgramPage from '../components/ProgramPageTemplate'
+import ProgramPageTemplate from '../components/ProgramPageTemplate'
 import Layout from '../components/Layout'
 
-const Program = ({ data }) => {
+const ProgramPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
-      <ProgramPage
+      <ProgramPageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
@@ -22,7 +22,7 @@ const Program = ({ data }) => {
   )
 }
 
-Program.propTypes = {
+ProgramPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -30,7 +30,7 @@ Program.propTypes = {
   }),
 }
 
-export default Program
+export default ProgramPage
 
 export const pageQuery = graphql`
   query ProgramPage($id: String!) {
@@ -47,9 +47,9 @@ export const pageQuery = graphql`
         }
         glance {
           heading
-          blurbs {
+          action {
             image
-            title
+            heading
             text
           }
         }
@@ -60,11 +60,13 @@ export const pageQuery = graphql`
         pathway {
           heading
           carousel {
-            cards{
+            cards {
               title
               text
             }
           }
         }
       }
+    }
+  }
 `

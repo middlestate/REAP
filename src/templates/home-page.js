@@ -1,18 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import HomePage from '../components/HomePageTemplate'
+import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
-const Home = ({ data }) => {
+const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
-      <HomePage
+      <HomePageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        hero_image={frontmatter.hero_image}
         mission={frontmatter.mission}
         what_we_do={frontmatter.what_we_do}
         quote={frontmatter.quote}
@@ -22,7 +23,7 @@ const Home = ({ data }) => {
   )
 }
 
-Home.propTypes = {
+HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -30,7 +31,7 @@ Home.propTypes = {
   }),
 }
 
-export default Home
+export default HomePage
 
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
@@ -40,13 +41,17 @@ export const pageQuery = graphql`
         subtitle
         heading
         subheading
+        hero_image
         mission {
           image
+          heading
           text
         }
         what_we_do {
+          heading
           action {
             image
+            heading
             text
           }
         }
